@@ -38,14 +38,14 @@ public class Movie {
     }
 
     public String setGenreType(String genreType) {
-        return this.genre = genre;
+        return this.genre;
     }
 
     public int setRanking(int ranking) {
         return this.ranking = ranking;
     }
-
-    public String toString(Movie movie) {
-        return movie.name + " " + movie.genre + " " + movie.ranking;
+    @Override
+    public String toString() {
+        return this.name + " " + this.genre + " " + this.ranking;
     }
 }

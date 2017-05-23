@@ -51,7 +51,7 @@ public class MovieTest {
     @Test
     public  void printMovieDetails() {
         Movie movie = new Movie("Die Hard", "Action",1);
-        String result = movie.toString(movie);
+        String result = movie.toString();
         assertEquals("Die Hard Action 1",result);
     }
 

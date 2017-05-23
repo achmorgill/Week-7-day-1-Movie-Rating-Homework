@@ -72,9 +72,9 @@ public class RankingTest {
         movieList.add(movie3);
         movieList.add(movie4);
 
-        String result = movieList.getMovieByRanking(movie2);
+        String result = movieList.getMovieByRanking(2);
 
-        assertEquals("Die Hard", result);
+        assertEquals("Die Hard Action 2", result);
     }
 
 

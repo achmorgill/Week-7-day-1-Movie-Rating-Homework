@@ -27,11 +27,12 @@ public class Ranking {
         this.movieList.remove(movieListSize-1);
     }
 
-    public String getMovieByRanking(Movie movie) {
-        int indexPosition = movie.ranking -1;
-//         String result = this.movieList.get(indexPosition);
+    public String getMovieByRanking(int rank) {
+        int indexPosition = rank -1;
 
-        return "Die Hard";
+        return this.movieList.get(indexPosition).toString();
+
+
 
     }
 }
